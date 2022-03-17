@@ -49,19 +49,16 @@ def predict(image):
     test_image = test_image / 255.0
     test_image = np.expand_dims(test_image, axis=0)
     class_names = [
-          'Backpack',
-          'Briefcase',
-          'Duffle', 
-          'Handbag']
+          'lightweight',
+          'middleweight',
+          'heavyweight']
     predictions = model.predict(test_image)
     scores = tf.nn.softmax(predictions[0])
     scores = scores.numpy()
     results = {
-          'Backpack': 0,
-          'Briefcase': 0,
-          'Duffle': 0, 
-          'Handbag': 0, 
-          'Purse': 0
+          'lightweight': 0,
+          'middleweight': 0,
+          'heavyweight': 0, 
 }
     
     result = f"{class_names[np.argmax(scores)]} with a { (100 * np.max(scores)).round(2) } % confidence." 
