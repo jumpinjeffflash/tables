@@ -10,7 +10,7 @@ import streamlit as st
 
 st.title('Welcome to the table classifier!')
 
-st.markdown("This dashboard takes an image of a table and classifies whether it's tricky to tranport, which will help guide setting the transportation fee")
+st.markdown("This dashboard takes an image of a table and classifies whether it's tricky to tranport, which will help with setting tranportation fees")
 
 @st.cache
 
