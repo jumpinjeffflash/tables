@@ -4,6 +4,7 @@ model = tf.keras.models.load_model('tables.hdf5')
 from PIL import Image, ImageOps
 import pandas as pd
 import numpy as np
+pip install cv2
 from cv2 import cv2
 
 import streamlit as st
