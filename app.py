@@ -1,5 +1,5 @@
 import tensorflow as tf
-model = tf.keras.models.load_model('tables.hdf5')
+model = tf.keras.models.load_model('tables.h5')
 
 from PIL import Image, ImageOps
 import pandas as pd
